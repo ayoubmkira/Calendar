@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Mukta", sans-serif;
+	background-image: url('./image.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, .2);
+	background-blend-mode: overlay;
+}
+
+.calendar-container {
+	border-radius: 10px;
+	padding: 2rem 1rem;
+	max-width: 380px;
+	background-color: rgba(255, 255, 255, .6);
+	box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	color: #333;
+}
+.header .fa {
+	font-size: 20px;
+	height: 2.5rem;
+	width: 2.5rem;
+	text-align: center;
+	line-height: 2.5rem;
+	border-radius: 5px;
+	color: #333;
+	background-color: #FFF;
+	cursor: pointer;
+}
+.header .fa:hover {
+	opacity: .8;
+}
+.header .date {
+	margin: 0 1.5rem;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+	text-align: center;
+}
+tbody:before {
+    content: "-";
+    display:block;
+    line-height:10px;
+    text-indent:-99999px;
+}
+
+table th,
+table td {
+	border-radius: 5px;
+	padding: .2rem 0;
+}
+table th {
+	background-color: #FFF;
+	color: #ff4e00;
+}
+
+table td.day {
+	border: 1px solid transparent;
+	transition: all .15s linear;
+}
+table td.day:hover {
+	border: 1px solid #F6F6F6;
+	box-sizing: border-box;
+	background-color: #FFF;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	color: #ff4e00;
+}
+table td.first {
+	color: #ff4e00;
+}
