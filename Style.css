@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap');
 
+:root {
+	--clr-orange: #ff4e00;
+	--clr-white: #FFF;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -42,7 +46,7 @@ body {
 	line-height: 2.5rem;
 	border-radius: 5px;
 	color: #333;
-	background-color: #FFF;
+	background-color: var(--clr-white);
 	cursor: pointer;
 }
 .header .fa:hover {
@@ -59,9 +63,9 @@ table {
 }
 tbody:before {
     content: "-";
-    display:block;
-    line-height:10px;
-    text-indent:-99999px;
+    display: block;
+    line-height: 10px;
+    text-indent: -99999px;
 }
 
 table th,
@@ -70,8 +74,8 @@ table td {
 	padding: .2rem 0;
 }
 table th {
-	background-color: #FFF;
-	color: #ff4e00;
+	background-color: var(--clr-white);
+	color: var(--clr-orange);
 }
 
 table td.day {
@@ -81,10 +85,10 @@ table td.day {
 table td.day:hover {
 	border: 1px solid #F6F6F6;
 	box-sizing: border-box;
-	background-color: #FFF;
+	background-color: var(--clr-white);
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-	color: #ff4e00;
+	color: var(--clr-orange);
 }
 table td.first {
-	color: #ff4e00;
+	color: var(--clr-orange);
 }
